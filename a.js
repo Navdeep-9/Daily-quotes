@@ -25,18 +25,18 @@ function updateTimeGreeting() {
     quotebox.style.opacity = '.9';
     ShowAuthor.style.color = 'orange';
     mainQuote.style.opacity = '2.1'
-    mainQuote.style.color = 'orange'
+    mainQuote.style.color = 'chocolate'
 
     
   } else if (hour >= 16 && hour < 19) {
     greeting = "Good evening dude";
     document.body.style.backgroundImage = 'URL(sunset.jpg)'
     quotebox.style.backgroundImage = 'URL(beach.jpg)'
-    quotebox.style.opacity = '0.5'
+    quotebox.style.opacity = '0.7'
     ShowAuthor.style.color = 'yellow';
     mainQuote.style.opacity = '2.1'
-    mainQuote.style.color = 'yellow'
-    heading.style.opacity = '2.1'
+    mainQuote.style.color = 'mintcream'
+
   } else {
     greeting = "Good night mate";
     document.body.style.backgroundImage = 'URL(night.jpg)'
