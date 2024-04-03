@@ -25,12 +25,28 @@ body{
     color: black;
   }
 
+#timeGreeting {
+    position: relative;
+    left: -50%; /* Start off-screen on the left */
+    animation: slideFromLeft 5s ease-in-out forwards; /* Slide in from left over 5 seconds */
+  }
+  
+@keyframes slideFromLeft {
+    0% {
+      left: -20%; /* Start off-screen on the left */
+    }
+    100% {
+      left: 0; /* Slide to the center */
+    }
+  }
 .quote-box{
     background-image: url(box.jpg);
     background-position: center;
     background-size: cover;
     min-width: 350px;
+    /* position: absolute; */
     position: relative;
+    margin: 0 100px 0 0px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
