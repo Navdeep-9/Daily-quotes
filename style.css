@@ -34,9 +34,15 @@ body{
 @keyframes slideFromLeft {
     0% {
       left: -20%; /* Start off-screen on the left */
+      background-color: rgb(225, 225, 225);
     }
+    
+    50% 
+    {background-color: rgba(255, 255, 255, 0.523);}
+
     100% {
       left: 0; /* Slide to the center */
+      background-color: transparent;
     }
   }
 .quote-box{
