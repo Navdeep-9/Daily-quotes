@@ -185,6 +185,7 @@ body{
         margin-left: 0;
         overflow-x: hidden; /* Prevent horizontal scrolling */
         margin-top: 5%;
+        overflow-y: scroll;
     }
 
     .quote-box h2 {
