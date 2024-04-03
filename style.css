@@ -46,16 +46,17 @@ body{
     min-width: 350px;
     /* position: absolute; */
     position: relative;
-    margin: 0 100px 0 0px;
+    margin: 0 45px 0 0px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
     overflow-y: scroll;
-    height: 100vh;
+    scrollbar-color: tranparent;
+    height: 60vh;
 
 }
 .quote-box h2{
@@ -187,6 +188,7 @@ body{
         overflow-x: hidden; /* Prevent horizontal scrolling */
         margin-top: 5%;
         overflow-y: scroll;
+        scrollbar-width: none;
     }
 
     .quote-box h2 {
@@ -202,9 +204,9 @@ body{
         font-weight: 900;
         white-space: pre-wrap;
         overflow-y: scroll;
-        width: calc(100% - 140px); /* Adjusted to fit the screen */
-        margin: 10px 70px;
         
+        width: calc(100% - 30px);
+        margin: 9px 5px;
     }
 
     .quote-box button img {
