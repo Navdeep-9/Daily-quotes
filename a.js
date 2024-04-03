@@ -31,13 +31,13 @@ function updateTimeGreeting() {
 
     
   } else if (hour >= 16 && hour < 19) {
-    // greeting = "Good evening dude";
-    // document.body.style.backgroundImage = 'URL(sunset.jpg)'
-    // quotebox.style.backgroundImage = 'URL(beach.jpg)'
-    // quotebox.style.opacity = '0.7'
-    // ShowAuthor.style.color = 'yellow';
-    // mainQuote.style.opacity = '2.1'
-    // mainQuote.style.color = 'mintcream'
+    greeting = "Good evening dude";
+    document.body.style.backgroundImage = 'URL(sunset.jpg)'
+    quotebox.style.backgroundImage = 'URL(beach.jpg)'
+    quotebox.style.opacity = '0.7'
+    ShowAuthor.style.color = 'yellow';
+    mainQuote.style.opacity = '2.1'
+    mainQuote.style.color = 'mintcream'
 
   } else {
     greeting = "Hello mate";
