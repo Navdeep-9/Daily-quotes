@@ -4,12 +4,14 @@ let ShowAuthor = document.getElementById("author")
 let span = document.getElementsByTagName("SPAN")
 let mainQuote = document.getElementById('quote')
 let heading = document.getElementById("heading")
+let bye = document.getElementById('bye')
 
 function updateTimeGreeting() {
-  var now = new Date();
-  var hour = now.getHours();
+  let now = new Date();
+  let hour = now.getHours();
+  let minute = now.getMinutes();
 
-  var greeting = "";
+  let greeting = "";
   if (hour >= 5 && hour < 12) {
     greeting = "Good morning buddy";
     document.body.style.backgroundImage = 'URL(b6.jpg)';
@@ -29,21 +31,25 @@ function updateTimeGreeting() {
 
     
   } else if (hour >= 16 && hour < 19) {
-    greeting = "Good evening dude";
-    document.body.style.backgroundImage = 'URL(sunset.jpg)'
-    quotebox.style.backgroundImage = 'URL(beach.jpg)'
-    quotebox.style.opacity = '0.7'
-    ShowAuthor.style.color = 'yellow';
-    mainQuote.style.opacity = '2.1'
-    mainQuote.style.color = 'mintcream'
+    // greeting = "Good evening dude";
+    // document.body.style.backgroundImage = 'URL(sunset.jpg)'
+    // quotebox.style.backgroundImage = 'URL(beach.jpg)'
+    // quotebox.style.opacity = '0.7'
+    // ShowAuthor.style.color = 'yellow';
+    // mainQuote.style.opacity = '2.1'
+    // mainQuote.style.color = 'mintcream'
 
   } else {
-    greeting = "Good night mate";
-    document.body.style.backgroundImage = 'URL(night.jpg)'
+    greeting = "Hello mate";
+    document.body.style.backgroundImage = 'URL(bnyt1.jpg)'
+    document.body.style.backgroundPosition = 'top'
+    document.body.style.opacity = '0.8'
     quotebox.style.backgroundImage = 'URL(bgnight.jpg)'
-    quotebox.style.opacity = '0.9'
+    quotebox.style.opacity = '1'
     quotebox.style.color = 'white';
     ShowAuthor.style.color = 'white'
+    heading.innerHTML = 'The Quote Of The Night Is';
+    bye.innerHTML = "Good Night Buddy..Have a Sweet Dreams";
   }
 
   document.getElementById("timeGreeting").innerHTML = greeting;
