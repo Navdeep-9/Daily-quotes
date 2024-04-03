@@ -164,7 +164,7 @@ body{
 @media screen and (max-width: 600px) {
     body{
         width: auto;
-        height: 100vh;
+        height: 97vh;
     }
 
     .quote-box .timeText{
