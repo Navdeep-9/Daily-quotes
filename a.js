@@ -12,16 +12,20 @@ function updateTimeGreeting() {
   var greeting = "";
   if (hour >= 5 && hour < 12) {
     greeting = "Good morning buddy";
-    
-} else if (hour >= 12 && hour < 16) {
-    greeting = "Good afternoon pal";
-    // document.body.style.backgroundImage = 'URL(afternoon.jpg)'
-    // quotebox.style.backgroundImage = 'URL(afternoonbox.jpg)'
     document.body.style.backgroundImage = 'URL(b6.jpg)';
     quotebox.style.backgroundImage = 'URL(mrngbox.jpg)'
     quotebox.style.opacity = '.8';
     ShowAuthor.style.color = 'whitesmoke';
     ShowAuthor.style.fontWeight = '900';
+    
+  } else if (hour >= 12 && hour < 16) {
+    greeting = "Good afternoon pal";
+    document.body.style.backgroundImage = 'URL(afternoonbox.jpg)'
+    quotebox.style.backgroundImage = 'URL(afternoonb1.jpg)'
+    quotebox.style.opacity = '.9';
+    ShowAuthor.style.color = 'orange';
+    mainQuote.style.opacity = '2.1'
+    mainQuote.style.color = 'orange'
 
     
   } else if (hour >= 16 && hour < 19) {
