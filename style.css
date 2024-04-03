@@ -54,7 +54,8 @@ body{
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
-    overflow:hidden;
+    overflow-y: scroll;
+    height: 100vh;
 
 }
 .quote-box h2{
