@@ -19,6 +19,7 @@ function updateTimeGreeting() {
     quotebox.style.opacity = '.8';
     ShowAuthor.style.color = 'whitesmoke';
     ShowAuthor.style.fontWeight = '900';
+    bye.innerHTML = "Have a Nice Day !! Buddy";
     
   } else if (hour >= 12 && hour < 16) {
     greeting = "Good afternoon pal";
