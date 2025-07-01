@@ -2,7 +2,7 @@ const quote = document.getElementById("quote")
 const author = document.getElementById("author")
 
 
-const api_url = "https://quotes-db.vercel.app/api/random";
+const api_url = https://random-quotes-freeapi.vercel.app/api/random;
 
 
 async function getquote(url){
