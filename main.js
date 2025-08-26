@@ -2,11 +2,8 @@ const quote = document.getElementById("quote")
 const author = document.getElementById("author")
 
 
-const api_url = https://random-quotes-freeapi.vercel.app/api/random;
-
-
-async function getquote(url){
-    const response = await fetch(url);
+async function getquote(){
+    const response = await fetch(`https://random-quotes-freeapi.vercel.app/api/random`);
     var data = await response.json();
     // console.log(data);
     quote.innerHTML = data.quote
@@ -14,7 +11,7 @@ async function getquote(url){
 }
 
 
-getquote(api_url);
+getquote();
 
 function Share(){
     window.open("whatsapp://send?text=Your message here" + quote.innerHTML + "----by" + author.innerHTML,"whatsapp Window","width=600, height=300")
